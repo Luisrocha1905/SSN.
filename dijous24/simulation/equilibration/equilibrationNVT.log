@@ -1,0 +1,922 @@
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 12 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: 
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 6 cores x 2 PUs = 12-way SMP)
+Charm++> cpu topology info is gathered in 0.256 seconds.
+CharmLB> Load balancing instrumentation for communication is off.
+Info: NAMD 3.0.1 for Linux-x86_64-multicore
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 80000 for multicore-linux-x86_64-gcc
+Info: Built Mon Oct 14 11:11:06 CDT 2024 by dhardy on athine.ks.uiuc.edu
+Info: 1 NAMD  3.0.1  Linux-x86_64-multicore  12    pc5-13  convidat
+Info: Running on 12 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.401536 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 815.863 MB of memory in use based on /proc/self/stat
+Info: Configuration file is equilibrationNVT.namd
+Info: Working in the current directory /home/samba/homes/convidat/dijous24/simulation/equilibration
+TCL: Suspending until startup complete.
+Warning: Option "1-4scaling" has been deprecated. Instead use "oneFourScaling".
+Info: EXTENDED SYSTEM FILE   ../minimize/minimized.restart.xsc
+Warning: The Langevin gamma parameters differ over the particles,
+Warning: requiring extra work per step to constrain rigid bonds.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        10
+Info: PERIODIC CELL BASIS 1  100 0 0
+Info: PERIODIC CELL BASIS 2  0 100 0
+Info: PERIODIC CELL BASIS 3  0 0 100
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: VELOCITY FILE          ../minimize/minimized.restart.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: REMOVING CENTER OF MASS DRIFT DURING SIMULATION
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           MDequil.dcd
+Info: DCD FREQUENCY          5000
+Info: DCD FIRST STEP         5000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           MDequil.xst
+Info: XST FREQUENCY          5000
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        MDequil
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       MDequil.restart
+Info: RESTART FREQUENCY      50000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      14
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        16.5
+Info: ENERGY OUTPUT STEPS    5000
+Info: ENERGY EVALUATION STEPS    5000
+Info: OUTPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    50000
+Info: PRESSURE OUTPUT STEPS  5000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   300
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         108 108 108
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_3.0.1_Linux-x86_64-multicore.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_3.0.1_Linux-x86_64-multicore.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      2
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1745491357
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         ../input/system.pdb
+Info: STRUCTURE FILE         ../input/system.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             ../input/par_all36m_prot.inp
+Info: PARAMETERS             ../input/par_water_ions.inp
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     ../minimize/minimized.restart.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 135 BONDS
+Info: 365 ANGLES
+Info: 706 DIHEDRAL
+Info: 35 IMPROPER
+Info: 6 CROSSTERM
+Info: 68 VDW
+Info: 3 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.0457505
+Info: Reading pdb file ../input/system.pdb
+Info: TIME FOR READING PDB FILE: 0.00275108
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 2941 ATOMS
+Info: 2377 BONDS
+Info: 2827 ANGLES
+Info: 3293 DIHEDRALS
+Info: 212 IMPROPERS
+Info: 74 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 2339 RIGID BONDS
+Info: 6484 DEGREES OF FREEDOM
+Info: 1172 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 1172 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 18833.6 amu
+Info: TOTAL CHARGE = 1.0021e-06 e
+Info: MASS DENSITY = 0.0312747 g/cm^3
+Info: ATOM DENSITY = 0.002941 atoms/A^3
+Info: *****************************
+Info: Reading from binary file ../minimize/minimized.restart.coor
+Info: 
+Info: Entering startup at 0.536251 s, 0.598903 MB of memory in use
+Info: Startup phase 0 took 0.156789 s, 0.598903 MB of memory in use
+Info: ADDED 8468 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.033992 s, 0.598903 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.0200012 s, 0.598903 MB of memory in use
+Info: Startup phase 3 took 0.0239983 s, 0.598903 MB of memory in use
+Info: Startup phase 4 took 0.0320072 s, 0.598903 MB of memory in use
+Info: Startup phase 5 took 0.0269921 s, 0.598903 MB of memory in use
+Info: PATCH GRID IS 6 (PERIODIC) BY 6 (PERIODIC) BY 2 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file ../minimize/minimized.restart.vel
+Info: REMOVING COM VELOCITY 0 0 0
+Info: LARGEST PATCH (57) HAS 468 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0650037 s, 0.598903 MB of memory in use
+Info: PME using 12 and 12 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0 1 2 3 4 5 6 7 8 9 ...
+Info: PME TRANS LOCATIONS: 0 1 2 3 4 5 6 7 8 9 ...
+Info: PME USING 1 GRID NODES AND 1 TRANS NODES
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Startup phase 7 took 0.0479987 s, 0.598903 MB of memory in use
+Info: Startup phase 8 took 0.0240032 s, 0.598903 MB of memory in use
+Info: Startup phase 9 took 0.0410001 s, 0.598903 MB of memory in use
+Info: Startup phase 10 took 0.054001 s, 0.598903 MB of memory in use
+Info: Startup phase 11 took 0.0339947 s, 0.598903 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.0420007 s, 0.598903 MB of memory in use
+Info: CREATING 1500 COMPUTE OBJECTS
+Info: useSync: 0 useProxySync: 0
+Info: Startup phase 13 took 0.0450049 s, 0.598903 MB of memory in use
+Info: Startup phase 14 took 0.0233234 s, 0.598903 MB of memory in use
+Info: Startup phase 15 took 0.000149488 s, 0.598903 MB of memory in use
+Info: Finished startup at 1.20651 s, 0.598903 MB of memory in use
+
+TCL: Running for 500000 steps
+PRESSURE: 0 53.4973 1.30591 0.699443 1.30591 48.6938 -0.883045 0.699443 -0.883045 52.2861
+GPRESSURE: 0 54.3155 0.357784 0.163748 0.819345 50.0825 -0.53419 1.13283 0.0724304 53.2505
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0        60.1518       214.2335       675.8105        10.6345         -10807.5822       910.5878         0.0000         0.0000         0.0000          -8936.1640         0.0000     -8936.1640     -8936.1291         0.0000             51.4924        52.5495   1000000.0000        51.4924        52.5495
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 1.40104
+LDB: ============== END OF LOAD BALANCING =============== 1.40503
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 1.42903
+LDB: ============= START OF LOAD BALANCING ============== 1.99408
+LDB: 956 computes have load of zero
+LDB: Largest compute 123 load 0.041581 is 33.2% of average load 0.125367
+LDB: Average compute 0.001319 is 1.1% of average load 0.125367
+LDB: Partitioning computes with target load 0.012537
+LDB: Increased migratable compute count from 412 to 437
+LDB: Largest unpartitionable compute is 0.003810
+LDB: ============== END OF LOAD BALANCING =============== 2.01216
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2.14003
+Info: Initial time: 12 CPUs 0.0139151 s/step 0.080527 days/ns 0.598903 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 2.28503
+LDB: ============== END OF LOAD BALANCING =============== 2.29115
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 2.31203
+LDB: ============= START OF LOAD BALANCING ============== 2.96204
+LDB: 956 computes have load of zero
+LDB: Largest compute 92 load 0.022861 is 18.0% of average load 0.126757
+LDB: Average compute 0.001243 is 1.0% of average load 0.126757
+LDB: TIME 2.98232 LOAD: AVG 0.126757 MAX 0.215033  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 2.98252 LOAD: AVG 0.126757 MAX 0.147008  PROXIES: TOTAL 134 MAXPE 16 MAXPATCH 7 TorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 3.01304
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 3.15503
+Info: Initial time: 12 CPUs 0.0164715 s/step 0.0953213 days/ns 0.598903 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 4.01303
+LDB: 956 computes have load of zero
+LDB: Largest compute 129 load 0.027810 is 17.1% of average load 0.162701
+LDB: Average compute 0.001520 is 0.9% of average load 0.162701
+LDB: TIME 4.02725 LOAD: AVG 0.162701 MAX 0.213773  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 4.02735 LOAD: AVG 0.162701 MAX 0.213773  PROXIES: TOTAL 134 MAXPE 16 MAXPATCH 7 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 4.02762 LOAD: AVG 0.162701 MAX 0.168768  PROXIES: TOTAL 140 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 4.05205
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 4.19103
+Info: Initial time: 12 CPUs 0.0167162 s/step 0.096737 days/ns 0.598903 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 4.86628
+LDB: 956 computes have load of zero
+LDB: Largest compute 1506 load 0.023036 is 14.6% of average load 0.157803
+LDB: Average compute 0.001617 is 1.0% of average load 0.157803
+LDB: TIME 4.8738 LOAD: AVG 0.157803 MAX 0.201838  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 4.87389 LOAD: AVG 0.157803 MAX 0.201838  PROXIES: TOTAL 140 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 4.87421 LOAD: AVG 0.157803 MAX 0.163412  PROXIES: TOTAL 143 MAXPE 19 MAXPATCH 10 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 4.88533
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 5.00803
+Info: Benchmark time: 12 CPUs 0.0133935 s/step 0.0775089 days/ns 0.598903 MB memory
+Info: Benchmark time: 12 CPUs 0.0146266 s/step 0.0846448 days/ns 0.598903 MB memory
+Info: Benchmark time: 12 CPUs 0.0146204 s/step 0.0846089 days/ns 0.598903 MB memory
+Info: Benchmark time: 12 CPUs 0.016181 s/step 0.09364 days/ns 0.598903 MB memory
+Info: Benchmark time: 12 CPUs 0.0148372 s/step 0.0858636 days/ns 0.598903 MB memory
+Info: Benchmark time: 12 CPUs 0.0163576 s/step 0.0946621 days/ns 0.598903 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 37.33
+LDB: ============== END OF LOAD BALANCING =============== 37.341
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 37.381
+LDB: ============= START OF LOAD BALANCING ============== 38.032
+LDB: 956 computes have load of zero
+LDB: Largest compute 92 load 0.038052 is 23.9% of average load 0.159497
+LDB: Average compute 0.001646 is 1.0% of average load 0.159497
+LDB: TIME 38.0466 LOAD: AVG 0.159497 MAX 0.204497  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 38.0467 LOAD: AVG 0.159497 MAX 0.204497  PROXIES: TOTAL 143 MAXPE 19 MAXPATCH 10 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 38.0469 LOAD: AVG 0.159497 MAX 0.16546  PROXIES: TOTAL 142 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 38.062
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 38.191
+LDB: ============= START OF LOAD BALANCING ============== 68.171
+LDB: ============== END OF LOAD BALANCING =============== 68.177
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 68.205
+LDB: ============= START OF LOAD BALANCING ============== 69.009
+LDB: 935 computes have load of zero
+LDB: Largest compute 128 load 0.024940 is 15.5% of average load 0.160556
+LDB: Average compute 0.001434 is 0.9% of average load 0.160556
+LDB: TIME 69.0242 LOAD: AVG 0.160556 MAX 0.187867  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 69.0243 LOAD: AVG 0.160556 MAX 0.187867  PROXIES: TOTAL 142 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 69.0247 LOAD: AVG 0.160556 MAX 0.166336  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 69.037
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 69.218
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 5000
+The last position output (seq=5000) takes 0.001 seconds, 0.599 MB of memory in use
+PRESSURE: 5000 -23.6347 13.8665 -26.5826 13.8665 -10.4623 -6.48063 -26.5826 -6.48063 9.03996
+GPRESSURE: 5000 -10.8487 14.078 -26.7778 18.0238 -10.0758 -13.9432 -22.9963 -21.9967 -2.04365
+PRESSAVG: 5000 1.04637 1.33272 -0.706791 1.33272 -0.477687 0.0200606 -0.706791 0.0200606 -0.375812
+GPRESSAVG: 5000 1.04682 1.33477 -0.710069 1.32861 -0.477008 0.0214017 -0.706798 0.0193273 -0.380344
+ENERGY:    5000       235.9741       693.3905       735.4589        38.1956          -9063.6653       282.1484         0.0000         0.0000      1898.0457          -5180.4521       294.6144     -7078.4978     -5165.3741       230.9922             -8.3524        -7.6561   1000000.0000         0.0643         0.0632
+
+LDB: ============= START OF LOAD BALANCING ============== 99.155
+LDB: ============== END OF LOAD BALANCING =============== 99.168
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 99.189
+LDB: ============= START OF LOAD BALANCING ============== 100.002
+LDB: 924 computes have load of zero
+LDB: Largest compute 129 load 0.030769 is 18.4% of average load 0.167670
+LDB: Average compute 0.001529 is 0.9% of average load 0.167670
+LDB: TIME 100.016 LOAD: AVG 0.16767 MAX 0.200713  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 100.016 LOAD: AVG 0.16767 MAX 0.200713  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 100.017 LOAD: AVG 0.16767 MAX 0.173631  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 100.036
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 100.179
+LDB: ============= START OF LOAD BALANCING ============== 130.702
+LDB: ============== END OF LOAD BALANCING =============== 130.71
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 130.746
+LDB: ============= START OF LOAD BALANCING ============== 131.555
+LDB: 934 computes have load of zero
+LDB: Largest compute 129 load 0.024979 is 14.8% of average load 0.169282
+LDB: Average compute 0.001557 is 0.9% of average load 0.169282
+LDB: TIME 131.566 LOAD: AVG 0.169282 MAX 0.203808  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 131.566 LOAD: AVG 0.169282 MAX 0.203808  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 131.567 LOAD: AVG 0.169282 MAX 0.175358  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 131.574
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 131.74
+PRESSURE: 10000 -11.2769 -11.5084 19.4301 -11.5084 21.7402 -8.81727 19.4301 -8.81727 -16.7026
+GPRESSURE: 10000 -6.46546 -1.97908 16.601 -23.6778 25.4195 -7.99586 18.0101 -3.11929 -25.0312
+PRESSAVG: 10000 -0.716606 -0.18832 0.197426 -0.18832 -0.479442 0.548323 0.197426 0.548323 -1.56656
+GPRESSAVG: 10000 -0.71106 -0.182198 0.196506 -0.19953 -0.462269 0.561086 0.194102 0.547168 -1.56704
+ENERGY:   10000       250.0407       693.1141       741.2249        38.3611          -9055.8244       302.2023         0.0000         0.0000      1910.6706          -5120.2107       296.5741     -7030.8813     -5104.6018       296.0905             -2.0798        -2.0257   1000000.0000        -0.9209        -0.9135
+
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 10000
+The last position output (seq=10000) takes 0.000 seconds, 0.599 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 163.11
+LDB: ============== END OF LOAD BALANCING =============== 163.119
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 163.168
+LDB: ============= START OF LOAD BALANCING ============== 164.086
+LDB: 897 computes have load of zero
+LDB: Largest compute 1521 load 0.027401 is 17.0% of average load 0.160780
+LDB: Average compute 0.001344 is 0.8% of average load 0.160780
+LDB: TIME 164.101 LOAD: AVG 0.16078 MAX 0.184283  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 164.101 LOAD: AVG 0.16078 MAX 0.184283  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 164.101 LOAD: AVG 0.16078 MAX 0.165981  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 164.12
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 164.304
+LDB: ============= START OF LOAD BALANCING ============== 197.456
+LDB: ============== END OF LOAD BALANCING =============== 197.464
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 197.485
+LDB: ============= START OF LOAD BALANCING ============== 198.208
+LDB: 899 computes have load of zero
+LDB: Largest compute 1521 load 0.026738 is 16.6% of average load 0.161489
+LDB: Average compute 0.001400 is 0.9% of average load 0.161489
+LDB: TIME 198.233 LOAD: AVG 0.161489 MAX 0.203196  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 198.233 LOAD: AVG 0.161489 MAX 0.203196  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 198.234 LOAD: AVG 0.161489 MAX 0.166889  PROXIES: TOTAL 144 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 198.248
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 198.399
+LDB: ============= START OF LOAD BALANCING ============== 228.018
+LDB: ============== END OF LOAD BALANCING =============== 228.025
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 228.065
+LDB: ============= START OF LOAD BALANCING ============== 228.766
+LDB: 926 computes have load of zero
+LDB: Largest compute 328 load 0.033659 is 20.1% of average load 0.167081
+LDB: Average compute 0.001549 is 0.9% of average load 0.167081
+LDB: TIME 228.779 LOAD: AVG 0.167081 MAX 0.217134  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 228.779 LOAD: AVG 0.167081 MAX 0.217134  PROXIES: TOTAL 144 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 228.78 LOAD: AVG 0.167081 MAX 0.173012  PROXIES: TOTAL 151 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 228.796
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 228.936
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 15000
+The last position output (seq=15000) takes 0.004 seconds, 0.599 MB of memory in use
+PRESSURE: 15000 2.09764 18.518 18.9327 18.518 28.2617 -48.7579 18.9327 -48.7579 -17.8157
+GPRESSURE: 15000 6.75968 24.2982 7.94492 10.8719 29.8234 -31.9077 28.5171 -27.9948 -22.5238
+PRESSAVG: 15000 1.01109 -0.645519 -0.209435 -0.645519 2.23956 -2.08958 -0.209435 -2.08958 -0.540946
+GPRESSAVG: 15000 1.01796 -0.656555 -0.209734 -0.635932 2.23372 -2.09351 -0.206517 -2.0721 -0.535045
+ENERGY:   15000       206.4713       696.5928       740.0644        36.4737          -9020.7862       267.7419         0.0000         0.0000      1935.5238          -5137.9182       300.4318     -7073.4420     -5125.4737       298.3676              4.1812         4.6864   1000000.0000         0.9032         0.9055
+
+LDB: ============= START OF LOAD BALANCING ============== 259.006
+LDB: ============== END OF LOAD BALANCING =============== 259.012
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 259.056
+LDB: ============= START OF LOAD BALANCING ============== 259.779
+LDB: 894 computes have load of zero
+LDB: Largest compute 404 load 0.026854 is 16.1% of average load 0.166912
+LDB: Average compute 0.001362 is 0.8% of average load 0.166912
+LDB: TIME 259.797 LOAD: AVG 0.166912 MAX 0.213748  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 259.797 LOAD: AVG 0.166912 MAX 0.213748  PROXIES: TOTAL 151 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 259.798 LOAD: AVG 0.166912 MAX 0.172501  PROXIES: TOTAL 147 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 259.815
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 259.971
+LDB: ============= START OF LOAD BALANCING ============== 287.024
+LDB: ============== END OF LOAD BALANCING =============== 287.032
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 287.07
+LDB: ============= START OF LOAD BALANCING ============== 287.774
+LDB: 915 computes have load of zero
+LDB: Largest compute 809 load 0.038629 is 21.8% of average load 0.176960
+LDB: Average compute 0.001673 is 0.9% of average load 0.176960
+LDB: TIME 287.788 LOAD: AVG 0.17696 MAX 0.245422  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 287.788 LOAD: AVG 0.17696 MAX 0.245422  PROXIES: TOTAL 147 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 287.789 LOAD: AVG 0.17696 MAX 0.18305  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 287.803
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 287.948
+PRESSURE: 20000 27.18 -4.026 39.2159 -4.026 48.8905 -20.5408 39.2159 -20.5408 27.3936
+GPRESSURE: 20000 35.1652 7.40958 39.7022 -25.6047 42.8759 -9.57525 45.6021 -2.60526 26.6341
+PRESSAVG: 20000 0.982265 1.06333 1.033 1.06333 0.0775472 0.0235932 1.033 0.0235932 -1.08273
+GPRESSAVG: 20000 1.00199 1.07944 1.03091 1.06877 0.0772179 0.0345309 1.02996 0.0193812 -1.0836
+ENERGY:   20000       214.2144       704.4637       739.8332        45.8532          -9099.0553       303.4226         0.0000         0.0000      1889.1155          -5202.1528       293.2283     -7091.2683     -5190.1321       297.5954             34.4880        34.8917   1000000.0000        -0.0076        -0.0015
+
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 20000
+The last position output (seq=20000) takes 0.000 seconds, 0.599 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 319.182
+LDB: ============== END OF LOAD BALANCING =============== 319.192
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 319.254
+LDB: ============= START OF LOAD BALANCING ============== 320.208
+LDB: 904 computes have load of zero
+LDB: Largest compute 129 load 0.024865 is 14.9% of average load 0.167093
+LDB: Average compute 0.001346 is 0.8% of average load 0.167093
+LDB: TIME 320.228 LOAD: AVG 0.167093 MAX 0.210857  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 320.228 LOAD: AVG 0.167093 MAX 0.210857  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 320.229 LOAD: AVG 0.167093 MAX 0.172826  PROXIES: TOTAL 147 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 320.257
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 320.466
+LDB: ============= START OF LOAD BALANCING ============== 354.483
+LDB: ============== END OF LOAD BALANCING =============== 354.486
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 354.532
+LDB: ============= START OF LOAD BALANCING ============== 355.566
+LDB: 915 computes have load of zero
+LDB: Largest compute 1524 load 0.029464 is 16.6% of average load 0.177865
+LDB: Average compute 0.001553 is 0.9% of average load 0.177865
+LDB: TIME 355.587 LOAD: AVG 0.177865 MAX 0.242517  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 355.587 LOAD: AVG 0.177865 MAX 0.242517  PROXIES: TOTAL 147 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 355.588 LOAD: AVG 0.177865 MAX 0.185954  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 355.602
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 355.798
+LDB: ============= START OF LOAD BALANCING ============== 388.31
+LDB: ============== END OF LOAD BALANCING =============== 388.317
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 388.356
+LDB: ============= START OF LOAD BALANCING ============== 389.197
+LDB: 872 computes have load of zero
+LDB: Largest compute 1514 load 0.031260 is 18.0% of average load 0.173877
+LDB: Average compute 0.001432 is 0.8% of average load 0.173877
+LDB: TIME 389.212 LOAD: AVG 0.173877 MAX 0.242391  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 389.212 LOAD: AVG 0.173877 MAX 0.242391  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 389.213 LOAD: AVG 0.173877 MAX 0.179613  PROXIES: TOTAL 146 MAXPE 18 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 389.225
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 389.423
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 25000
+The last position output (seq=25000) takes 0.000 seconds, 0.599 MB of memory in use
+PRESSURE: 25000 -26.6106 15.4407 -7.33714 15.4407 47.4998 30.059 -7.33714 30.059 1.50541
+GPRESSURE: 25000 -16.8595 2.40304 -5.65336 2.57577 36.1922 32.2617 4.22104 40.4294 7.44379
+PRESSAVG: 25000 -0.590846 -0.206166 -0.818959 -0.206166 0.214313 0.364793 -0.818959 0.364793 2.35465
+GPRESSAVG: 25000 -0.591538 -0.21696 -0.830558 -0.2065 0.223226 0.368446 -0.806228 0.360179 2.35807
+ENERGY:   25000       243.3599       698.3099       719.4700        39.4413          -8872.2838       220.9747         0.0000         0.0000      2000.4883          -4950.2396       310.5156     -6950.7279     -4934.3183       299.6209              7.4649         8.9255   1000000.0000         0.6594         0.6633
+
+LDB: ============= START OF LOAD BALANCING ============== 423.148
+LDB: ============== END OF LOAD BALANCING =============== 423.155
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 423.197
+LDB: ============= START OF LOAD BALANCING ============== 424.12
+LDB: 907 computes have load of zero
+LDB: Largest compute 404 load 0.025496 is 14.6% of average load 0.175123
+LDB: Average compute 0.001471 is 0.8% of average load 0.175123
+LDB: TIME 424.139 LOAD: AVG 0.175123 MAX 0.199663  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 424.139 LOAD: AVG 0.175123 MAX 0.199663  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 9 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 424.139 LOAD: AVG 0.175123 MAX 0.180879  PROXIES: TOTAL 142 MAXPE 18 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 424.159
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 424.409
+LDB: ============= START OF LOAD BALANCING ============== 458.558
+LDB: ============== END OF LOAD BALANCING =============== 458.565
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 458.606
+LDB: ============= START OF LOAD BALANCING ============== 459.549
+LDB: 918 computes have load of zero
+LDB: Largest compute 1509 load 0.026847 is 14.8% of average load 0.181571
+LDB: Average compute 0.001453 is 0.8% of average load 0.181571
+LDB: TIME 459.573 LOAD: AVG 0.181571 MAX 0.251175  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 459.573 LOAD: AVG 0.181571 MAX 0.251175  PROXIES: TOTAL 143 MAXPE 18 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 459.574 LOAD: AVG 0.181571 MAX 0.187857  PROXIES: TOTAL 146 MAXPE 18 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 459.607
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 459.801
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 30000
+The last position output (seq=30000) takes 0.000 seconds, 0.599 MB of memory in use
+PRESSURE: 30000 37.8143 -20.6415 -13.4721 -20.6415 17.3067 -5.3396 -13.4721 -5.3396 1.05353
+GPRESSURE: 30000 44.6467 -20.8294 -23.0888 -8.57494 12.7177 -16.862 -13.6752 14.2767 0.64556
+PRESSAVG: 30000 -2.67259e-05 0.542462 0.342052 0.542462 0.550258 -1.11896 0.342052 -1.11896 0.0479371
+GPRESSAVG: 30000 -0.00394341 0.543272 0.35721 0.546598 0.533113 -1.12481 0.334931 -1.10738 0.0492268
+ENERGY:   30000       234.3187       689.1279       740.9335        37.2985          -8946.3822       230.3864         0.0000         0.0000      1906.6156          -5107.7017       295.9447     -7014.3173     -5094.3193       300.3636             18.7249        19.3366   1000000.0000         0.1994         0.1928
+
+LDB: ============= START OF LOAD BALANCING ============== 492.165
+LDB: ============== END OF LOAD BALANCING =============== 492.171
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 492.196
+LDB: ============= START OF LOAD BALANCING ============== 492.982
+LDB: 872 computes have load of zero
+LDB: Largest compute 1515 load 0.025707 is 15.3% of average load 0.168352
+LDB: Average compute 0.001300 is 0.8% of average load 0.168352
+LDB: TIME 492.997 LOAD: AVG 0.168352 MAX 0.212407  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 492.997 LOAD: AVG 0.168352 MAX 0.212407  PROXIES: TOTAL 147 MAXPE 18 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 492.998 LOAD: AVG 0.168352 MAX 0.172916  PROXIES: TOTAL 145 MAXPE 18 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 493.013
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 493.246
+LDB: ============= START OF LOAD BALANCING ============== 530.419
+LDB: ============== END OF LOAD BALANCING =============== 530.426
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 530.46
+LDB: ============= START OF LOAD BALANCING ============== 531.172
+LDB: 873 computes have load of zero
+LDB: Largest compute 1515 load 0.035272 is 21.4% of average load 0.164568
+LDB: Average compute 0.001314 is 0.8% of average load 0.164568
+LDB: TIME 531.183 LOAD: AVG 0.164568 MAX 0.229826  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 531.183 LOAD: AVG 0.164568 MAX 0.229826  PROXIES: TOTAL 147 MAXPE 18 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 531.184 LOAD: AVG 0.164568 MAX 0.169811  PROXIES: TOTAL 160 MAXPE 23 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 531.192
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 531.332
+LDB: ============= START OF LOAD BALANCING ============== 565.543
+LDB: ============== END OF LOAD BALANCING =============== 565.551
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 565.586
+LDB: ============= START OF LOAD BALANCING ============== 566.288
+LDB: 894 computes have load of zero
+LDB: Largest compute 328 load 0.028932 is 16.3% of average load 0.177159
+LDB: Average compute 0.001391 is 0.8% of average load 0.177159
+LDB: TIME 566.303 LOAD: AVG 0.177159 MAX 0.208185  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 566.303 LOAD: AVG 0.177159 MAX 0.208185  PROXIES: TOTAL 158 MAXPE 21 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 566.304 LOAD: AVG 0.177159 MAX 0.182922  PROXIES: TOTAL 157 MAXPE 21 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 566.317
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 566.47
+PRESSURE: 35000 -66.6045 -26.5576 1.14674 -26.5576 -0.357711 24.4837 1.14674 24.4837 26.6927
+GPRESSURE: 35000 -59.2856 -31.7398 -10.3855 -34.242 -5.31665 26.0525 7.3948 26.3009 28.1836
+PRESSAVG: 35000 0.339933 0.991096 1.15981 0.991096 0.0246053 -0.539578 1.15981 -0.539578 -0.0806312
+GPRESSAVG: 35000 0.344256 0.994044 1.14557 0.972872 0.0176751 -0.542753 1.15359 -0.545813 -0.0749137
+ENERGY:   35000       251.0247       675.1371       717.2200        41.2035          -9073.6671       266.4303         0.0000         0.0000      2000.9056          -5121.7459       310.5804     -7122.6515     -5104.5052       301.6197            -13.4232       -12.1395   1000000.0000         0.0946         0.0957
+
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 35000
+The last position output (seq=35000) takes 0.000 seconds, 0.599 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 601.203
+LDB: ============== END OF LOAD BALANCING =============== 601.211
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 601.244
+LDB: ============= START OF LOAD BALANCING ============== 602.026
+LDB: 882 computes have load of zero
+LDB: Largest compute 1515 load 0.026506 is 16.0% of average load 0.165815
+LDB: Average compute 0.001424 is 0.9% of average load 0.165815
+LDB: TIME 602.039 LOAD: AVG 0.165815 MAX 0.209555  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 602.039 LOAD: AVG 0.165815 MAX 0.209555  PROXIES: TOTAL 158 MAXPE 22 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 602.04 LOAD: AVG 0.165815 MAX 0.17136  PROXIES: TOTAL 163 MAXPE 22 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 602.055
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 602.274
+LDB: ============= START OF LOAD BALANCING ============== 633.769
+LDB: ============== END OF LOAD BALANCING =============== 633.778
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 633.837
+LDB: ============= START OF LOAD BALANCING ============== 634.847
+LDB: 877 computes have load of zero
+LDB: Largest compute 872 load 0.024195 is 14.8% of average load 0.163398
+LDB: Average compute 0.001220 is 0.7% of average load 0.163398
+LDB: TIME 634.867 LOAD: AVG 0.163398 MAX 0.238047  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.598903 MB
+LDB: TIME 634.867 LOAD: AVG 0.163398 MAX 0.238047  PROXIES: TOTAL 163 MAXPE 22 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: TIME 634.868 LOAD: AVG 0.163398 MAX 0.168671  PROXIES: TOTAL 160 MAXPE 22 MAXPATCH 8 RefineTorusLB MEM: 0.598903 MB
+LDB: ============== END OF LOAD BALANCING =============== 634.898
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 635.088
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    LDB: ============= START OF LOAD BALANCING ============== 205.308
+LDB: ============== END OF LOAD BALANCING =============== 205.313
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 205.355
+LDB: ============= START OF LOAD BALANCING ============== 206.143
+LDB: 862 computes have load of zero
+LDB: Largest compute 1524 load 0.025402 is 15.2% of average load 0.167620
+LDB: Average compute 0.001460 is 0.9% of average load 0.167620
+LDB: TIME 206.163 LOAD: AVG 0.16762 MAX 0.20364  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 206.163 LOAD: AVG 0.16762 MAX 0.20364  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 206.163 LOAD: AVG 0.16762 MAX 0.172229  PROXIES: TOTAL 143 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 206.183
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 206.461
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 60000
+PRESSURE: 60000 -28.9708 -1.3848 9.77965 -1.3848 6.84949 7.24492 9.77965 7.24492 -0.392743
+GPRESSURE: 60000 -26.2594 -8.08039 21.9448 9.91024 3.38051 11.0776 7.43908 8.70384 1.24023
+PRESSAVG: 60000 1.83233 1.06679 -0.383903 1.06679 1.35465 1.17351 -0.383903 1.17351 -2.25869
+GPRESSAVG: 60000 1.84101 1.0853 -0.368782 1.06042 1.34634 1.16251 -0.395151 1.18776 -2.25211
+ENERGY:   60000       220.8733       714.4862       734.9075        50.1355          -8920.4188       220.0331         0.0000         0.0000      1902.1008          -5077.8824       295.2439     -6979.9832     -5065.5931       301.6558             -7.5047        -7.2129   1000000.0000         0.3094         0.3117
+
+LDB: ============= START OF LOAD BALANCING ============== 238.337
+LDB: ============== END OF LOAD BALANCING =============== 238.344
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 238.365
+LDB: ============= START OF LOAD BALANCING ============== 239.068
+LDB: 848 computes have load of zero
+LDB: Largest compute 1510 load 0.020671 is 12.8% of average load 0.161656
+LDB: Average compute 0.001281 is 0.8% of average load 0.161656
+LDB: TIME 239.078 LOAD: AVG 0.161656 MAX 0.195196  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 239.078 LOAD: AVG 0.161656 MAX 0.195196  PROXIES: TOTAL 142 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 239.078 LOAD: AVG 0.161656 MAX 0.166327  PROXIES: TOTAL 143 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 239.1
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 239.3
+LDB: ============= START OF LOAD BALANCING ============== 268.942
+LDB: ============== END OF LOAD BALANCING =============== 268.949
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 268.986
+LDB: ============= START OF LOAD BALANCING ============== 269.663
+LDB: 887 computes have load of zero
+LDB: Largest compute 123 load 0.024119 is 14.0% of average load 0.172674
+LDB: Average compute 0.001445 is 0.8% of average load 0.172674
+LDB: TIME 269.677 LOAD: AVG 0.172674 MAX 0.195739  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 269.677 LOAD: AVG 0.172674 MAX 0.195739  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 269.678 LOAD: AVG 0.172674 MAX 0.178471  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 269.693
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 269.814
+LDB: ============= START OF LOAD BALANCING ============== 299.19
+LDB: ============== END OF LOAD BALANCING =============== 299.194
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 299.236
+LDB: ============= START OF LOAD BALANCING ============== 299.927
+LDB: 839 computes have load of zero
+LDB: Largest compute 123 load 0.027798 is 15.6% of average load 0.177756
+LDB: Average compute 0.001402 is 0.8% of average load 0.177756
+LDB: TIME 299.944 LOAD: AVG 0.177756 MAX 0.21749  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 299.947 LOAD: AVG 0.177756 MAX 0.21749  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 299.947 LOAD: AVG 0.177756 MAX 0.182912  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 299.967
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 300.125
+PRESSURE: 65000 6.58565 7.78868 -24.4515 7.78868 -16.6469 18.5033 -24.4515 18.5033 13.8703
+GPRESSURE: 65000 3.60503 25.0726 -24.2456 -3.2711 -17.5093 21.6103 -14.7518 27.4411 19.1824
+PRESSAVG: 65000 1.63605 1.08287 1.93079 1.08287 -0.173313 -0.757507 1.93079 -0.757507 2.51679
+GPRESSAVG: 65000 1.64605 1.0704 1.93857 1.08565 -0.182259 -0.762048 1.92975 -0.748485 2.51747
+ENERGY:   65000       213.2624       711.8727       720.7326        40.6421          -8902.0282       153.8101         0.0000         0.0000      1967.6213          -5094.0870       305.4140     -7061.7083     -5082.3478       298.3793              1.2697         1.7594   1000000.0000         1.3265         1.3271
+
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 65000
+LDB: ============= START OF LOAD BALANCING ============== 332.619
+LDB: ============== END OF LOAD BALANCING =============== 332.626
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 332.656
+LDB: ============= START OF LOAD BALANCING ============== 333.467
+LDB: 867 computes have load of zero
+LDB: Largest compute 1520 load 0.028492 is 16.2% of average load 0.176319
+LDB: Average compute 0.001456 is 0.8% of average load 0.176319
+LDB: TIME 333.481 LOAD: AVG 0.176319 MAX 0.225094  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 333.481 LOAD: AVG 0.176319 MAX 0.225094  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 333.482 LOAD: AVG 0.176319 MAX 0.181818  PROXIES: TOTAL 145 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 333.496
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 333.639
+LDB: ============= START OF LOAD BALANCING ============== 366.81
+LDB: ============== END OF LOAD BALANCING =============== 366.819
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 366.864
+LDB: ============= START OF LOAD BALANCING ============== 367.873
+LDB: 884 computes have load of zero
+LDB: Largest compute 1520 load 0.024523 is 14.4% of average load 0.170815
+LDB: Average compute 0.001346 is 0.8% of average load 0.170815
+LDB: TIME 367.89 LOAD: AVG 0.170815 MAX 0.23176  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 367.89 LOAD: AVG 0.170815 MAX 0.23176  PROXIES: TOTAL 145 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 367.891 LOAD: AVG 0.170815 MAX 0.176249  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 367.912
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 368.15
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 70000
+PRESSURE: 70000 -6.56294 -7.53349 9.5871 -7.53349 -35.171 -8.85259 9.5871 -8.85259 -6.33204
+GPRESSURE: 70000 -5.10415 -23.5415 11.1344 17.636 -27.2446 -3.53163 -2.12485 -17.4641 -16.0617
+PRESSAVG: 70000 0.709114 -0.350808 1.31062 -0.350808 1.85336 -1.81949 1.31062 -1.81949 0.290158
+GPRESSAVG: 70000 0.718632 -0.373233 1.29229 -0.346268 1.84941 -1.82187 1.31366 -1.85193 0.28399
+ENERGY:   70000       250.7447       664.6605       714.9449        43.5477          -8987.6536       240.4505         0.0000         0.0000      1960.8524          -5112.4530       304.3633     -7073.3053     -5097.4000       298.0036            -16.0220       -16.1368   1000000.0000         0.9509         0.9507
+
+LDB: ============= START OF LOAD BALANCING ============== 399.455
+LDB: ============== END OF LOAD BALANCING =============== 399.465
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 399.496
+LDB: ============= START OF LOAD BALANCING ============== 400.38
+LDB: 861 computes have load of zero
+LDB: Largest compute 1521 load 0.033066 is 19.3% of average load 0.171072
+LDB: Average compute 0.001301 is 0.8% of average load 0.171072
+LDB: TIME 400.393 LOAD: AVG 0.171072 MAX 0.208373  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 400.397 LOAD: AVG 0.171072 MAX 0.208373  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 400.397 LOAD: AVG 0.171072 MAX 0.176525  PROXIES: TOTAL 144 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 400.406
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 400.571
+LDB: ============= START OF LOAD BALANCING ============== 429.229
+LDB: ============== END OF LOAD BALANCING =============== 429.236
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 429.267
+LDB: ============= START OF LOAD BALANCING ============== 429.974
+LDB: 824 computes have load of zero
+LDB: Largest compute 809 load 0.028238 is 17.0% of average load 0.166164
+LDB: Average compute 0.001302 is 0.8% of average load 0.166164
+LDB: TIME 429.99 LOAD: AVG 0.166164 MAX 0.222032  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 429.99 LOAD: AVG 0.166164 MAX 0.222032  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 429.991 LOAD: AVG 0.166164 MAX 0.171256  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 430.003
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 430.147
+LDB: ============= START OF LOAD BALANCING ============== 459.629
+LDB: ============== END OF LOAD BALANCING =============== 459.636
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 459.66
+LDB: ============= START OF LOAD BALANCING ============== 460.334
+LDB: 845 computes have load of zero
+LDB: Largest compute 1521 load 0.023095 is 13.2% of average load 0.175215
+LDB: Average compute 0.001272 is 0.7% of average load 0.175215
+LDB: TIME 460.347 LOAD: AVG 0.175215 MAX 0.222114  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 460.347 LOAD: AVG 0.175215 MAX 0.222114  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 460.347 LOAD: AVG 0.175215 MAX 0.180693  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 460.361
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 460.528
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 75000
+PRESSURE: 75000 -49.9677 -0.561606 -21.1598 -0.561606 11.6518 32.3828 -21.1598 32.3828 -19.3661
+GPRESSURE: 75000 -53.2136 0.738316 -24.4232 9.64356 6.45397 32.7206 -14.2226 34.0738 -11.9527
+PRESSAVG: 75000 0.494843 -0.651467 1.34134 -0.651467 1.09784 -1.03714 1.34134 -1.03714 0.0584101
+GPRESSAVG: 75000 0.490326 -0.64422 1.36297 -0.656175 1.10081 -1.03661 1.33652 -1.02748 0.0598812
+ENERGY:   75000       228.4680       705.4591       740.1632        45.0648          -9051.4823       261.0814         0.0000         0.0000      1968.8704          -5102.3754       305.6078     -7071.2458     -5087.1213       301.9211            -19.2274       -19.5708   1000000.0000         0.5504         0.5503
+
+LDB: ============= START OF LOAD BALANCING ============== 487.15
+LDB: ============== END OF LOAD BALANCING =============== 487.163
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 487.186
+LDB: ============= START OF LOAD BALANCING ============== 487.918
+LDB: 861 computes have load of zero
+LDB: Largest compute 1512 load 0.022732 is 13.5% of average load 0.168064
+LDB: Average compute 0.001405 is 0.8% of average load 0.168064
+LDB: TIME 487.933 LOAD: AVG 0.168064 MAX 0.204589  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 487.933 LOAD: AVG 0.168064 MAX 0.204589  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 487.934 LOAD: AVG 0.168064 MAX 0.173117  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 487.949
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 488.104
+LDB: ============= START OF LOAD BALANCING ============== 520.111
+LDB: ============== END OF LOAD BALANCING =============== 520.12
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 520.179
+LDB: ============= START OF LOAD BALANCING ============== 520.948
+LDB: 856 computes have load of zero
+LDB: Largest compute 809 load 0.024572 is 13.8% of average load 0.177947
+LDB: Average compute 0.001402 is 0.8% of average load 0.177947
+LDB: TIME 520.963 LOAD: AVG 0.177947 MAX 0.203425  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 520.963 LOAD: AVG 0.177947 MAX 0.203425  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 520.963 LOAD: AVG 0.177947 MAX 0.183412  PROXIES: TOTAL 143 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 520.983
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 521.14
+PRESSURE: 80000 25.7214 2.44218 -4.00989 2.44218 19.1807 28.9482 -4.00989 28.9482 -6.78664
+GPRESSURE: 80000 25.641 12.8085 1.90396 3.01937 21.9411 37.8333 -7.54049 23.0637 -10.1895
+PRESSAVG: 80000 -2.15243 1.49334 -0.214619 1.49334 0.637388 1.08098 -0.214619 1.08098 -0.813556
+GPRESSAVG: 80000 -2.14527 1.51507 -0.229896 1.47979 0.633949 1.08754 -0.212127 1.08779 -0.815414
+ENERGY:   80000       231.3860       715.6052       721.8372        40.0101          -9016.8984       232.9291         0.0000         0.0000      1936.0623          -5139.0684       300.5154     -7075.1307     -5124.0001       300.8157             12.7052        12.4642   1000000.0000        -0.7762        -0.7756
+
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 80000
+LDB: ============= START OF LOAD BALANCING ============== 556.143
+LDB: ============== END OF LOAD BALANCING =============== 556.163
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 556.189
+LDB: ============= START OF LOAD BALANCING ============== 557.122
+LDB: 863 computes have load of zero
+LDB: Largest compute 1507 load 0.034952 is 20.2% of average load 0.173320
+LDB: Average compute 0.001304 is 0.8% of average load 0.173320
+LDB: TIME 557.141 LOAD: AVG 0.17332 MAX 0.25571  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 557.141 LOAD: AVG 0.17332 MAX 0.25571  PROXIES: TOTAL 143 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 557.142 LOAD: AVG 0.17332 MAX 0.180676  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 557.162
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 557.295
+LDB: ============= START OF LOAD BALANCING ============== 589.36
+LDB: ============== END OF LOAD BALANCING =============== 589.373
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 589.427
+LDB: ============= START OF LOAD BALANCING ============== 590.287
+LDB: 852 computes have load of zero
+LDB: Largest compute 123 load 0.028296 is 15.7% of average load 0.179743
+LDB: Average compute 0.001442 is 0.8% of average load 0.179743
+LDB: TIME 590.301 LOAD: AVG 0.179743 MAX 0.2262  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 590.301 LOAD: AVG 0.179743 MAX 0.2262  PROXIES: TOTAL 145 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 590.302 LOAD: AVG 0.179743 MAX 0.184953  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 590.314
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 590.491
+LDB: ============= START OF LOAD BALANCING ============== 621.756
+LDB: ============== END OF LOAD BALANCING =============== 621.771
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 621.815
+LDB: ============= START OF LOAD BALANCING ============== 622.779
+LDB: 841 computes have load of zero
+LDB: Largest compute 1522 load 0.027721 is 16.5% of average load 0.168351
+LDB: Average compute 0.001264 is 0.8% of average load 0.168351
+LDB: TIME 622.792 LOAD: AVG 0.168351 MAX 0.204997  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 622.792 LOAD: AVG 0.168351 MAX 0.204997  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 8 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 622.792 LOAD: AVG 0.168351 MAX 0.172318  PROXIES: TOTAL 145 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 622.807
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 622.958
+PRESSURE: 85000 28.1284 -4.44219 -12.086 -4.44219 -1.59211 8.78099 -12.086 8.78099 -16.9766
+GPRESSURE: 85000 32.6226 11.3017 -18.3781 -14.4798 -9.53988 7.87276 -29.4085 5.56285 -13.012
+PRESSAVG: 85000 -1.00386 1.43354 -1.01264 1.43354 0.095279 1.17102 -1.01264 1.17102 0.83878
+GPRESSAVG: 85000 -1.01403 1.42232 -1.00268 1.44021 0.0944868 1.17654 -1.01614 1.15904 0.842317
+ENERGY:   85000       227.7428       714.9087       720.7398        40.0033          -9053.9206       201.0621         0.0000         0.0000      1870.4068          -5279.0572       290.3243     -7149.4639     -5265.6639       296.5484              3.1866         3.3569   1000000.0000        -0.0233        -0.0257
+
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 85000
+LDB: ============= START OF LOAD BALANCING ============== 656.108
+LDB: ============== END OF LOAD BALANCING =============== 656.112
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 656.139
+LDB: ============= START OF LOAD BALANCING ============== 656.932
+LDB: 822 computes have load of zero
+LDB: Largest compute 1510 load 0.023194 is 14.1% of average load 0.164575
+LDB: Average compute 0.001172 is 0.7% of average load 0.164575
+LDB: TIME 656.948 LOAD: AVG 0.164575 MAX 0.205438  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 656.948 LOAD: AVG 0.164575 MAX 0.205438  PROXIES: TOTAL 146 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 656.949 LOAD: AVG 0.164575 MAX 0.168519  PROXIES: TOTAL 145 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 656.981
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 657.125
+LDB: ============= START OF LOAD BALANCING ============== 690.404
+LDB: ============== END OF LOAD BALANCING =============== 690.411
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 690.448
+LDB: ============= START OF LOAD BALANCING ============== 691.398
+LDB: 876 computes have load of zero
+LDB: Largest compute 809 load 0.026139 is 15.8% of average load 0.164918
+LDB: Average compute 0.001297 is 0.8% of average load 0.164918
+LDB: TIME 691.421 LOAD: AVG 0.164918 MAX 0.191641  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 691.421 LOAD: AVG 0.164918 MAX 0.191641  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 691.421 LOAD: AVG 0.164918 MAX 0.17243  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 691.438
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 691.682
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 90000
+PRESSURE: 90000 -50.6142 -17.0391 -9.58062 -17.0391 -81.2313 -14.7137 -9.58062 -14.7137 -41.6301
+GPRESSURE: 90000 -41.2546 -26.9621 -18.9023 -0.00527497 -82.1089 -17.2017 -3.93135 -17.823 -49.3367
+PRESSAVG: 90000 -1.26459 0.315497 -0.0345151 0.315497 1.56969 -1.35515 -0.0345151 -1.35515 0.289742
+GPRESSAVG: 90000 -1.27324 0.310412 -0.0401475 0.312709 1.57458 -1.36293 -0.0185504 -1.35834 0.289251
+ENERGY:   90000       237.6520       685.5511       708.6610        43.0911          -9050.7486       195.6616         0.0000         0.0000      1998.4367          -5181.6951       310.1971     -7180.1318     -5167.0171       298.1994            -57.8252       -57.5667   1000000.0000         0.1983         0.1969
+
+LDB: ============= START OF LOAD BALANCING ============== 728.671
+LDB: ============== END OF LOAD BALANCING =============== 728.684
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 728.717
+LDB: ============= START OF LOAD BALANCING ============== 729.49
+LDB: 896 computes have load of zero
+LDB: Largest compute 123 load 0.022356 is 13.5% of average load 0.165777
+LDB: Average compute 0.001399 is 0.8% of average load 0.165777
+LDB: TIME 729.503 LOAD: AVG 0.165777 MAX 0.193865  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 729.503 LOAD: AVG 0.165777 MAX 0.193865  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 729.503 LOAD: AVG 0.165777 MAX 0.17115  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 729.516
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 729.64
+LDB: ============= START OF LOAD BALANCING ============== 763.673
+LDB: ============== END OF LOAD BALANCING =============== 763.683
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 763.715
+LDB: ============= START OF LOAD BALANCING ============== 764.701
+LDB: 882 computes have load of zero
+LDB: Largest compute 809 load 0.032236 is 19.3% of average load 0.167108
+LDB: Average compute 0.001380 is 0.8% of average load 0.167108
+LDB: TIME 764.716 LOAD: AVG 0.167108 MAX 0.209806  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 764.716 LOAD: AVG 0.167108 MAX 0.209806  PROXIES: TOTAL 145 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 764.716 LOAD: AVG 0.167108 MAX 0.197368  PROXIES: TOTAL 143 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 764.733
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 764.903
+LDB: ============= START OF LOAD BALANCING ============== 798.307
+LDB: ============== END OF LOAD BALANCING =============== 798.315
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 798.348
+LDB: ============= START OF LOAD BALANCING ============== 799.058
+LDB: 860 computes have load of zero
+LDB: Largest compute 1512 load 0.024219 is 15.1% of average load 0.160905
+LDB: Average compute 0.001278 is 0.8% of average load 0.160905
+LDB: TIME 799.075 LOAD: AVG 0.160905 MAX 0.228355  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 799.075 LOAD: AVG 0.160905 MAX 0.228355  PROXIES: TOTAL 144 MAXPE 18 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 799.075 LOAD: AVG 0.160905 MAX 0.166112  PROXIES: TOTAL 144 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 799.091
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 799.259
+WRITING COORDINATES TO DCD FILE MDequil.dcd AT STEP 95000
+PRESSURE: 95000 -25.1431 -8.89851 -18.408 -8.89851 -21.4491 -31.8144 -18.408 -31.8144 3.84563
+GPRESSURE: 95000 -17.611 -15.2011 -11.1808 2.45115 -25.3659 -43.4139 -7.54184 -26.128 2.06301
+PRESSAVG: 95000 1.05104 -1.57423 -1.38212 -1.57423 0.24286 -0.355476 -1.38212 -0.355476 0.11543
+GPRESSAVG: 95000 1.04187 -1.56705 -1.3852 -1.5775 0.246732 -0.353186 -1.37605 -0.363412 0.119787
+ENERGY:   95000       273.5105       689.0194       690.7648        36.6316          -9062.2842       232.8225         0.0000         0.0000      1910.6665          -5228.8688       296.5734     -7139.5353     -5216.2238       301.3110            -14.2489       -13.6380   1000000.0000         0.4698         0.4695
+
+LDB: ============= START OF LOAD BALANCING ============== 832.297
+LDB: ============== END OF LOAD BALANCING =============== 832.307
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 832.372
+LDB: ============= START OF LOAD BALANCING ============== 833.315
+LDB: 873 computes have load of zero
+LDB: Largest compute 1519 load 0.030695 is 18.2% of average load 0.168735
+LDB: Average compute 0.001372 is 0.8% of average load 0.168735
+LDB: TIME 833.33 LOAD: AVG 0.168735 MAX 0.207216  PROXIES: TOTAL 132 MAXPE 16 MAXPATCH 7 None MEM: 0.580544 MB
+LDB: TIME 833.33 LOAD: AVG 0.168735 MAX 0.207216  PROXIES: TOTAL 144 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: TIME 833.331 LOAD: AVG 0.168735 MAX 0.174299  PROXIES: TOTAL 143 MAXPE 19 MAXPATCH 7 RefineTorusLB MEM: 0.580544 MB
+LDB: ============== END OF LOAD BALANCING =============== 833.348
+Info: useSync: 0 useProxySync: 0
+LDB: =============== DONE WITH MIGRATION ================ 833.594
